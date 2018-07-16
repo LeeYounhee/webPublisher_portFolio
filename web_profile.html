@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>PROFILE</title>
+	<!-- iOS, 안드로이드 크롬 브라우저 용 웹앱 전체 화면 설정 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="mobile-web-app-capable" content="yes"/>
+	<!-- iOS, 안드로이드 크롬 브라우저 용 웹클립 아이콘 설정 -->
+	<link rel="apple-touch-icon" sizes="76x76" href="my_ios_icon_76.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="my_iphone_120.png"/>
+	<link rel="apple-touch-icon" sizes="152x152" href="my_ipad_152.png"/>
+	<link rel="shortcut icon" sizes="196x196" href="my_chrome_icon_196.png"/>
+	<!-- iOS 전용 시작화면 설정 -->
+	<link rel="apple-touch-startup-image" href="startup.png"/>
+	<!-- iOS 전용 상태바 모습 설정 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/web_profile.css">
+  <!-- JS -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="js/radial-progress-bar.js"></script>
+  <script src="js/web_profile.js"></script>
+</head>
+<body>
+  <header class="hd">
+    <div class="wrap">
+      <div class="logo"><a href="web_profile.html"></a></div>
+      <div class="menu_ic">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="x_ic">
+        <i class="fas fa-times"></i>
+      </div>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a class="eng" href="#about">PROFILE</a></li>
+          <li><a class="eng" href="#skill">SKILL</a></li>
+          <li><a class="eng" href="#port">PORTFOLIO</a></li>
+          <li><a class="eng" href="#cont">CONTACT</a></li>
+        </ul>
+      </nav>
+      <nav class="m_nav">
+        <ul class="m_menu">
+          <li><a class="eng" href="#about">PROFILE</a></li>
+          <li><a class="eng" href="#skill">SKILL</a></li>
+          <li><a class="eng" href="#port">PORTFOLIO</a></li>
+          <li><a class="eng" href="#cont">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div><!-- .wrap-->
+  </header><!-- .hd-->
+  <section class="sec">
+    <div class="start">
+      <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <source src="http://younii0415.dothome.co.kr/profile/file/start_back.mp4" type="video/mp4">
+        <source src="http://younii0415.dothome.co.kr/profile/file/start_back.ogg" type="video/ogg">
+        <source src="http://younii0415.dothome.co.kr/profile/file/start_back.webm" type="video/webm">
+      </video>
+      <img src="img/start.png" alt="">
+    </div>
+    <div class="wrap">
+      <div id="about">
+        <div class="titbox">
+          <h1 class="eng">PROFILE</h1>
+          <div class="line"></div>
+        </div><!-- .titbox -->
+        <div class="conbox">
+          <div class="left">
+            <img src="img/photo.jpeg" alt="">
+          </div><!-- .left -->
+          <div class="right">
+            <dl>
+              <dt class="eng">Name</dt>
+              <dd>이윤희</dd>
+              <dt class="eng">Birthday</dt>
+              <dd>1993.4.15</dd>
+              <dt class="eng">Education</dt>
+              <dd>더조은컴퓨터아트학원<br>모바일 웹&amp;앱 디자인 컨텐츠 개발</dd>
+              <dt class="eng">Keyword</dt>
+              <dd>#배려 #책임감 #섬세</dd>
+            </dl>
+          </div><!-- .right -->
+          <div class="bt">
+            <a href="file/webPublisher_LeeYounhee.pdf" target="_blank">
+              자세히 보기
+            </a>
+          </div>
+        </div><!-- .conbox -->
+      </div><!-- #about -->
+    </div><!-- .wrap-->
+    <div id="skill">
+      <div class="titbox">
+        <h1 class="eng">SKILL</h1>
+        <div class="line"></div>
+      </div><!-- .titbox -->
+      <div class="conbox">
+        <ul class="chart">
+          <li>
+            <h3 class="eng">Photoshop<span class="br"> &amp;illustrator</span></h3>
+            <div id="gra"></div>
+            <p>다양한 합성, <span class="br">보정작업 가능</span></p>
+          </li><!-- graphic -->
+          <li>
+            <h3 class="eng">HTML5</h3>
+            <div id="html"></div>
+            <p>DOCTYPE 이해하고, <span class="br">문서에 맞춰 작업 가능</span></p>
+          </li><!-- html -->
+          <li>
+            <h3 class="eng">CSS3</h3>
+            <div id="css"></div>
+            <p>트랜지션, 애니메이션 등 작업 가능</p>
+          </li><!-- css -->
+          <li>
+            <h3 class="eng">JavaScript</h3>
+            <div id="js"></div>
+            <p>기본적인 문법 이해</p>
+            </li><!-- javascript -->
+          <li>
+            <h3 class="eng">JQuery</h3>
+            <div id="jq"></div>
+            <p>다양한 메소드를 <span class="br">사용해 기능구현.</span></p>
+            <p>플러그인 활용가능</p>
+          </li><!-- jauery -->
+          <li>
+            <h3>반응형/웹표준</h3>
+            <div id="rwd"></div>
+            <p>반응형웹 제작 가능</p>
+            <p>웹표준을 준수하기 <span class="br">위해 노력</span></p>
+          </li><!-- rwd -->
+        </ul>
+      </div><!-- .conbox -->
+    </div><!-- #skill -->
+    <div class="wrap">
+        <div id="port" >
+          <div class="titbox">
+            <h1 class="eng">PORTFOLIO</h1>
+            <div class="line"></div>
+            <p>개인 포트폴리오사이트입니다.</p>
+          </div><!-- .titbox -->
+          <div class="conbox">
+            <div class="hollys">
+                <div class="pf">
+                  <img src="img/pf_hollys.png" alt="할리스리뉴얼사이트">
+                  <div class="hide_pf">
+                    <a href="http://younii0415.dothome.co.kr/hollys/main.html" target="_blank">
+                      <div>
+                        <p>레이아웃 디자인, 퍼블리싱: 100% 단독작업</p>
+                        <p>반응형 웹 / 메인페이지 리뉴얼</p>
+                        <span class="bt">CLICK</span>
+                      </div>
+                    </a>
+                  </div><!-- .hide_pf -->
+                  <h3><span class="eng">HOLLYS</span> 메인페이지</h3>
+                </div><!-- .pf -->
+              </div><!-- .hollys -->
+            <div class="mac">
+              <div class="pf">
+                <img src="img/pf_mac.png" alt="mac리뉴얼사이트">
+                <div class="hide_pf">
+                  <a href="http://younii0415.dothome.co.kr/webpf/main.html"  target="_blank">
+                    <div>
+                      <p>레이아웃 디자인 / 퍼블리싱: 100% 단독작업</p>
+                      <p>반응형 웹 / 사이트 리뉴얼</p>
+                      <span class="bt">CLICK</span>
+                    </div>
+                  </a>
+                </div><!-- .hide_pf -->
+                <h3 class="eng">MAC</h3>
+              </div><!-- .pf -->
+            </div><!-- .mac -->
+            <div class="busan">
+              <div class="pf">
+                <img src="img/pf_busan.png" alt="부산사이트샘플이미지">
+                <div class="hide_pf">
+                  <a href="http://youn2lee.dothome.co.kr/rwdbusan/main.html"  target="_blank">
+                    <div class="inner">
+                      <p>디자인 / 퍼블리싱: 100% 단독작업</p>
+                      <p>반응형 웹 / 최초로 구축한 사이트</p>
+                      <span class="bt">CLICK</span>
+                    </div>
+                  </a>
+                </div><!-- .hide_pf -->
+                <h3>부산구석구석 사이트</h3>
+              </div><!-- .pf -->
+            </div><!-- .busan -->
+          </div><!-- .conbox -->
+        </div><!-- #port -->
+      </div><!-- .wrap-->
+  </section><!--  .sec-->
+  <footer id="cont" class="ft">
+    <div class="wrap">
+      <div class="titbox">
+        <h1 class="eng">CONTACT</h1>
+        <div class="line"></div>
+      </div><!-- .titbox -->
+      <div class="conbox">
+        <div class="info">
+          <h3>My Info</h3>
+          <p class="eng">E-mail : dbsgml0415@gmail.com</p>
+          <p class="eng">Phone: 010.5376.4303</p>
+          <p class="eng">Adress: 서울시 은평구</p>
+        </div><!-- .info -->
+        <div class="contact">
+          <div class="con">
+            <h3>Contact Me</h3>
+            <a href="tel:01053764303">
+              <i class="fas fa-mobile-alt"></i>
+            </a>
+            <a href="sms:01053764303">
+              <i class="far fa-comment"></i>
+            </a>
+            <a href="mailto:dbsgml0415@gmail.com">
+              <i class="far fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/younii0415/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <div class="down">
+              <a href="file/webPublisher_LeeYounhee.pdf" target="_blank">
+                <i class="fas fa-download"></i>
+                이력서 다운로드
+              </a>
+            </div><!-- .down -->
+          </div><!-- .con -->
+        </div><!-- .contact -->
+      </div><!-- .conbox -->
+    </div><!-- .wrap-->
+    <div class="copy">
+      <p class="eng">Thank you!</p>
+      <p class="eng">&copy; Copyright 2018 <span class="eng">Lee YounHee</span> All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
