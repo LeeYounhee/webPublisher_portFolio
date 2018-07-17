@@ -202,17 +202,18 @@ body{overflow-x:hidden;}
     #skill .conbox .chart{width:100%;}
       #skill .conbox .chart li{
         width:32%; height:49.5%;
-        padding-right:1%;
+        margin-right:1%;
         float:left;
         text-align:center;
       }
       #skill .conbox .chart li:first-child,
-      #skill .conbox .chart li:nth-child(4){padding-left:1%;}
+      #skill .conbox .chart li:nth-child(4){margin-left:1%;}
       #skill .conbox .chart li:nth-child(4),
       #skill .conbox .chart li:nth-child(5),
-      #skill .conbox .chart li:last-child{padding-top:1%;}
+      #skill .conbox .chart li:last-child{margin-top:1%;}
 
   #skill .conbox .chart li h3{padding-bottom:10px;}
+  #skill .conbox .chart li:last-child h3{height:35px; line-height:35px;}
   #skill .conbox .chart li p{padding-top:10px;}
 
 
@@ -250,7 +251,7 @@ body{overflow-x:hidden;}
     }
       #port .conbox >div .pf .hide_pf a div{
         position:absolute;
-        width:100%; height:100%;
+        width:100%; height:70%;
         top:30%;
       }
         #port .conbox >div .pf .hide_pf div p{
@@ -263,7 +264,7 @@ body{overflow-x:hidden;}
         text-align:center;
         font-weight:bold;
         position:absolute;
-        top:30%; left:50%;
+        bottom:40%; left:50%;
         margin-left:-35px;
         }
 
@@ -393,28 +394,12 @@ body{overflow-x:hidden;}
 
       #about .bt{bottom:40px;}
 }
-
-@media screen and (max-width:360px){
-  #about .conbox .right dl dt:nth-child(7),
-  #about .conbox .right dl dd:last-child{display:none;}
-}
-
-@media screen and (max-width:320px){
-  #about .conbox .right dl dt:nth-child(5),
-  #about .conbox .right dl dd:nth-child(6){display:none;}
-  #about .bt{bottom:20px;}
-
-  #skill .conbox .chart li{width:48.5%; height:32.666666%;}
+@media screen and (max-width:414px){
+  #skill .conbox .chart li:nth-child(2) h3,
+  #skill .conbox .chart li:nth-child(3) h3{height:60px; line-height:60px;}
 
   #skill .br{display:block;}
-
-  #skill .conbox .chart li:nth-child(2n+1){padding-left:1%;}
-  #skill .conbox .chart li:nth-child(4){padding-left:1%;}
-  #skill .conbox .chart li:nth-child(3){padding-top:1%;}
-
-  #skill .conbox .chart li:nth-child(2) h3{height:56px; line-height:56px;}
-  #skill .conbox .chart li:last-child h3{height:35px; line-height:35px;}
-
+  #skill .conbox .chart li:nth-child(2) .br{display:inline;}
   #port .conbox{padding:10px;}
   #port .conbox >div,
   #port .conbox .mac{
@@ -425,6 +410,30 @@ body{overflow-x:hidden;}
     margin-bottom:20px;
     float:none;
   }
+  #port .conbox >div .pf .hide_pf a div{top:20%;}
+  #port .conbox >div .pf .hide_pf a div .br{display:block;}
+  #port .conbox >div .pf .hide_pf a .bt{
+    bottom:10%;
+  }
+}
+
+@media screen and (max-width:375px){
+  .start img{
+    width:150px;
+    margin-left:-75px;
+    margin-top:-75px;
+  }
+  #about .conbox .right dl dt:nth-child(5),
+  #about .conbox .right dl dd:nth-child(6),
+  #about .conbox .right dl dt:nth-child(7),
+  #about .conbox .right dl dd:last-child{display:none;}
+
+  #skill .conbox .chart li{width:48.5%; height:32.666666%;}
+
+  #skill .conbox .chart li:nth-child(2n+1){margin-left:1%;}
+  #skill .conbox .chart li:nth-child(4){margin-left:0%;}
+  #skill .conbox .chart li:nth-child(3){margin-top:1%;}
+  #skill .conbox .chart li:nth-child(3) h3{height:35px; line-height:35px;}
 
   .ft .conbox .info,
   .ft .conbox .contact{
@@ -436,4 +445,9 @@ body{overflow-x:hidden;}
 
   .ft .copy p{font-size:.8em;}
   .ft .copy p span{font-size:.9em;}
+}
+
+@media screen and (max-width:320px){
+  #about .bt{bottom:20px;}
+
 }
